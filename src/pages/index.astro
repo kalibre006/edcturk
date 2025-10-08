@@ -17,8 +17,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			<p>
 				Her zaman Hazır Ol!
 			</p>
-
-			.social-links {
+<div class="social-links">
+			
 <a href="https://www.youtube.com/@edcturk" target="_blank" rel="noopener noreferrer" class="social-link">
   <!-- YouTube SVG -->
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="red" viewBox="0 0 24 24">
@@ -44,14 +44,19 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   </svg>
   TikTok
 </a>
-
-			}
+<div/>
+			
 			
 		</main>
 
 
 	<style>
 
+h1 {
+  display: flex;
+  align-items: center; /* logo ve metni dikeyde ortalar */
+  gap: 10px;           /* logo ile yazı arası boşluk */
+}
 	.social-links {
   
   gap: 30px; /* sosyal linkler arası boşluk arttırıldı */
@@ -64,7 +69,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   }
 
   .logo-img {
-    width: 40%; /* logoyu %10 boyutunda yapar */
+    width: 20%; /* logoyu %10 boyutunda yapar */
     height: auto; /* orantıyı korur */
   }
 

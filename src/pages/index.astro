@@ -13,7 +13,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 EDCTURK </h1>
+			<h1> <img src="/logo.png" alt="EDCTURK Logo" class="logo-img" /> EDCTURK </h1>
 			<p>
 				Her zaman Hazır Ol!
 			</p>
@@ -46,7 +46,25 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			
 		</main>
 
+
 	<style>
+
+ .logo-title {
+    display: flex;
+    align-items: center; /* logo ve yazıyı dikey ortala */
+    gap: 10px; /* logo ile yazı arası boşluk */
+  }
+
+  .logo-img {
+    width: 10%; /* logoyu %10 boyutunda yapar */
+    height: auto; /* orantıyı korur */
+  }
+
+  .social-link svg {
+    vertical-align: middle;
+    margin-right: 6px;
+  }
+
   .social-link svg {
     vertical-align: middle;
     margin-right: 6px;
